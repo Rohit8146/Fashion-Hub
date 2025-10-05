@@ -19,5 +19,9 @@ export default function CustomButton({
         {title}
       </Text>
     </TouchableOpacity>
+<<<<<<< HEAD
   ); 
+=======
+  );
+>>>>>>> 333544f0b4cd37cfedd1bca724b6a981f0a19a37
 }
