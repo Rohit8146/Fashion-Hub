@@ -48,7 +48,7 @@ const Login = () => {
             textstyle="text-white uppercase"
           />
         </View>
-        <View className="justify-center items-center flex-row w-[100%] px-20 gap-10 py-10">
+        <View className="justify-center items-center flex-row w-[100%] h-[45vh] px-20 gap-3 py-10">
           <Paragraph
             content="Don't have an acount ?"
             styleClass="w-fit text-[18px] pb-0"
@@ -56,7 +56,7 @@ const Login = () => {
           <Link
             title="Sign Up"
             handleClick={() => console.log("hjello")}
-            linkStyle="text-[16px]"
+            linkStyle="text-[16px] pb-0 underline"
           />
         </View>
       </View>
