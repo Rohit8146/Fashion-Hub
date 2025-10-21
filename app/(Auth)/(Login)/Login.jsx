@@ -10,7 +10,11 @@ const Login = () => {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("./ForgetPassword");
+    router.push("../ForgetPassword/");
+  };
+
+  const signUpHandle = () => {
+    router.push("../Register/");
   };
 
   const handleLogin = () => {
@@ -28,6 +32,7 @@ const Login = () => {
             placeholder="Enter Your Email Address"
             type="email-address"
             fieldType="email"
+            form="Login"
           />
         </View>
         <View className="border-b-[1px] border-[#D6D6D6] w-[100%] py-2 mt-8">
@@ -35,6 +40,7 @@ const Login = () => {
             placeholder="Password"
             type="default"
             fieldType="password"
+            form="Login"
           />
         </View>
         <View className="flex justify-end py-3 w-full pt-10">
@@ -55,7 +61,7 @@ const Login = () => {
           />
           <Link
             title="Sign Up"
-            handleClick={() => console.log("hjello")}
+            handleClick={() => signUpHandle()}
             linkStyle="text-[16px] pb-0 underline"
           />
         </View>

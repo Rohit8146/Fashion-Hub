@@ -18,10 +18,13 @@ export default function Index() {
     <View className="flex-1 justify-end items-center">
       <BgImage path={ImagePath.welcome} />
       <View className="absolute z-20 top-[70%] w-full h-[100vh] p-7">
-        <Heading title="Welcome to Fashion Hub!" styleClass="text-white text-center" />
+        <Heading
+          title="Welcome to Fashion Hub!"
+          styleClass="text-white text-center"
+        />
         <Paragraph
           content="The Home for a Fashionista"
-          styleClass="text-white text-[20px]"
+          styleClass="text-bold text-center mb-5 text-white text-[20px] "
         />
         <CustomButton title="Get Started" pressHandle={handlePress} />
       </View>
