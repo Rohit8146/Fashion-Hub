@@ -4,6 +4,7 @@ import CustomButton from "../../../components/ui/CustomButton";
 import InputField from "../../../components/ui/InputField";
 import Link from "../../../components/ui/Link";
 import Paragraph from "../../../components/ui/Paragraph";
+import PasswordField from "../../../components/ui/PasswordField";
 import Heading from "./../../../components/ui/Heading";
 
 const Register = () => {
@@ -44,22 +45,18 @@ const Register = () => {
             form="Register"
           />
         </View>
-        <View className="border-b-[1px] border-[#D6D6D6] w-[100%] py-2 mt-8">
-          <InputField
-            placeholder="Password"
-            type="dafult"
-            fieldType="password"
-            form="Register"
-          />
-        </View>
-        <View className="border-b-[1px] border-[#D6D6D6] w-[100%] py-2 mt-8">
-          <InputField
-            placeholder="Confirm Password"
-            type="default"
-            fieldType="cPassword"
-            form="Register"
-          />
-        </View>
+        <PasswordField
+          placeholder="Password"
+          type="default"
+          fieldType="password"
+          form="Register"
+        />
+        <PasswordField
+          placeholder="Confirm Password"
+          type="default"
+          fieldType="cPassword"
+          form="Register"
+        />
         <View className="w-[200px] mx-auto mt-16">
           <CustomButton
             title="Sign Up"

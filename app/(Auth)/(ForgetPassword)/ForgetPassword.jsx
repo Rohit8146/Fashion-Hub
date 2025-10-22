@@ -12,6 +12,7 @@ const ForgetPassword = () => {
     router.push("../OtpVaildation/");
   }
 
+
   return (
     <View className="flex h-[100vh] w-[100%] p-7 justify-start pt-[150px] items-start">
       <View className="flex pb-20">

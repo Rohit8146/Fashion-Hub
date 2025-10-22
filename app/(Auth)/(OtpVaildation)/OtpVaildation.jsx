@@ -1,3 +1,4 @@
+import { useRouter } from "expo-router";
 import { StyleSheet, View } from "react-native";
 import { OtpInput } from "react-native-otp-entry";
 import Heading from "../../../components/ui/Heading";
@@ -5,6 +6,17 @@ import Paragraph from "../../../components/ui/Paragraph";
 import ResendOtp from "./ResendOtp";
 
 const OtpValidation = () => {
+  const router = useRouter();
+
+  const otpVerification = (text) => {
+    if (text.length == 4) {
+      router.push("../(ForgetPassword)/CreatePassword");
+    } else {
+      console.log(text.length);
+    }
+  };
+
+  console.log();
   return (
     <View className="flex-1 justify-start items-start p-7 pt-[150px] w-full">
       <View className="flex justify-start items-start">
@@ -22,7 +34,7 @@ const OtpValidation = () => {
           numberOfDigits={4}
           focusColor="#000000"
           color="#808080"
-          onTextChange={(text) => console.log(text)}
+          onTextChange={(text) => otpVerification(text)}
           theme={{
             pinCodeContainerStyle: styles.pinCodeContainerStyle,
             pinCodeTextStyle: styles.pinCodeTextStyle,

@@ -5,6 +5,8 @@ export default function RootLayout() {
     <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="Login" />
       <Stack.Screen name="ForgetPassword" />
+      <Stack.Screen name="OtpVaildation" />
+      <Stack.Screen name="Register" />
 
       {/* <Stack.Screen name="ExtraInfo" /> */}
     </Stack>

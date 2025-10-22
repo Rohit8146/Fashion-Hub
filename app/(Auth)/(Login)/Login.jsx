@@ -5,6 +5,7 @@ import Heading from "../../../components/ui/Heading";
 import InputField from "../../../components/ui/InputField";
 import Link from "../../../components/ui/Link";
 import Paragraph from "../../../components/ui/Paragraph";
+import PasswordField from "../../../components/ui/PasswordField";
 
 const Login = () => {
   const router = useRouter();
@@ -35,14 +36,12 @@ const Login = () => {
             form="Login"
           />
         </View>
-        <View className="border-b-[1px] border-[#D6D6D6] w-[100%] py-2 mt-8">
-          <InputField
-            placeholder="Password"
-            type="default"
-            fieldType="password"
-            form="Login"
-          />
-        </View>
+        <PasswordField
+          placeholder="Password"
+          type="default"
+          fieldType="password"
+          form="Login"
+        />
         <View className="flex justify-end py-3 w-full pt-10">
           <Link title="Forget Password ?" handleClick={handleClick} />
         </View>
