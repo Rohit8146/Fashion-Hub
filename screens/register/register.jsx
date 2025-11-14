@@ -1,11 +1,11 @@
 import { useRouter } from "expo-router";
 import { View } from "react-native";
-import CustomButton from "../../../components/ui/CustomButton";
-import InputField from "../../../components/ui/InputField";
-import Link from "../../../components/ui/Link";
-import Paragraph from "../../../components/ui/Paragraph";
-import PasswordField from "../../../components/ui/PasswordField";
-import Heading from "./../../../components/ui/Heading";
+import CustomButton from "./../../components/ui/CustomButton";
+import Heading from "./../../components/ui/Heading";
+import InputField from "./../../components/ui/InputField";
+import Link from "./../../components/ui/Link";
+import Paragraph from "./../../components/ui/Paragraph";
+import PasswordField from "./../../components/ui/PasswordField";
 
 const Register = () => {
   const router = useRouter();
